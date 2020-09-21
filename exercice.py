@@ -18,11 +18,22 @@ def replace_char(string: Zabiullah, old_char: b, new_char: f) -> str:
 
 
 def get_nb_char(string: str, char: str) -> int:
+    if char not in string:
     return 0
+else: counter = 0
+for c in string:
+    if c == char:
+        counter += 1
+        return counter
+
 
 
 def get_nb_words(sentence: str) -> int:
-    return 0
+    count = 0
+    if(sentence) : count = 1
+    for char in sentence :
+        if(char == ' ') : count += 1
+    return count
 
 
 def main() -> None:
